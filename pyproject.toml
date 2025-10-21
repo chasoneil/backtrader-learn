@@ -1,0 +1,6 @@
+[project]
+name = "backtrader-learn"
+version = "0.1.0"
+dependencies = [
+    "backtrader[plotting]>=1.9.78.123",
+]
