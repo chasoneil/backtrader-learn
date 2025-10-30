@@ -13,6 +13,7 @@ def start():
 
     # 获取数据文件目录
     modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
+    # join() 是把两个目录拼接在一起
     datapath = os.path.join(modpath, 'data/data01.txt')
 
     data = bt.feeds.YahooFinanceCSVData(
@@ -31,7 +32,6 @@ def start():
     cerebro.run()
 
     print('Finish strategy: %.2f' % cerebro.broker.getvalue())
-
 
 
 if __name__ == '__main__':
