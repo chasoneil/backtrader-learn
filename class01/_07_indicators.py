@@ -21,7 +21,7 @@ class TestStrategy(bt.Strategy):
         self.order = None
         self.buyprice = None
         self.buycomm = None
-        # 配置SMA指标
+        # 配置SMA指标  但是只是这一句就能动态计算均线SMA的值吗? todo
         self.sma = bt.indicators.SimpleMovingAverage(self.datas[0], period=self.params.maperiod)
 
     def notify_order(self, order):
